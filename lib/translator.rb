@@ -20,10 +20,12 @@ def load_library(file)
   newmoticons
 end #outputs hash collection {:meaning => "english", "japanese"}
 
-def get_japanese_emoticon(data, string)
+def get_japanese_emoticon(data, emoticon_given)
   master_list = load_library(data)
   
   master_list.each do |meaning, emoticon| 
+    if emoticon_given == master_list[meaning][emoticon[0]]
+      
   end
 
 end
