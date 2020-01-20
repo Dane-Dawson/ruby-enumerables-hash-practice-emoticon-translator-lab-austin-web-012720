@@ -23,4 +23,5 @@ def get_english_meaning(string)
     if load_library[:meaning][1] == string #if the second value ("japanese") is a match
       load_library[:meaning][0] #return "english"
     end
+  end
 end
