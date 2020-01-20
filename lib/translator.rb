@@ -27,7 +27,7 @@ def get_japanese_emoticon(data, emoticon_given)
     return library["get_emoticon"][english_emoticon]
   end
   
-  return nil
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(data, string)
