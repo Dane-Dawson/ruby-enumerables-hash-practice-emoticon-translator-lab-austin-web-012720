@@ -24,7 +24,7 @@ def get_japanese_emoticon(data, emoticon_given)
   master_list = load_library(data)
   
   if master_list["get_emoticon"].key?(emoticon_given) then
-    return library["get_emoticon"][emoticon_given]
+    return master_list["get_emoticon"][emoticon_given]
   end
   
   return "Sorry, that emoticon was not found"
@@ -37,6 +37,6 @@ def get_english_meaning(data, string)
     return master_list["get_meaning"][string]
   end
   
-  return nil
+  return "Sorry, that emoticon was not found"
     
 end
