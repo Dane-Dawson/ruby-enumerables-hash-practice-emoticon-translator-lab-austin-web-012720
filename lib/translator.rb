@@ -5,6 +5,16 @@ require "yaml"
 def load_library(file) 
   emoticons = YAML.load_file(file)
   
+  newmoticons = {
+    "get_meaning" => {},
+    "get_emoticon" => {}
+  }
+  
+  emoticons.each do |meaning, emoticons|
+    english_emoticon = emoticons[0]
+    japanese_emoticon = emoticons[1]
+  end
+  
   emoticons
 end #outputs hash collection {:meaning => "english", "japanese"}
 
