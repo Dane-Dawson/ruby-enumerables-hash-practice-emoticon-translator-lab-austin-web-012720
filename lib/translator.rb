@@ -18,7 +18,7 @@ def load_library(file)
   end
   
   newmoticons
-end #outputs hash collection {:meaning => "english", "japanese"}
+end 
 
 def get_japanese_emoticon(data, emoticon_given)
   master_list = load_library(data)
