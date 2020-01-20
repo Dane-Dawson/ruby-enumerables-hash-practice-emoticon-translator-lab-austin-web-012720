@@ -13,7 +13,7 @@ def load_library(file)
   emoticons.each do |meaning, emoticons|
     english_emoticon = emoticons[0]
     japanese_emoticon = emoticons[1]
-    newmotions["get_meaning"][japanese_emoticon] = meaning
+    newmoticons["get_meaning"][japanese_emoticon] = meaning
     newmoticons["get_emoticon"][english_emoticon] = japanese_emoticon
   end
   
