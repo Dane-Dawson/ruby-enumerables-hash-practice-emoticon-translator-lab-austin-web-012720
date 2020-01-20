@@ -25,6 +25,7 @@ def get_japanese_emoticon(data, emoticon_given)
   
   master_list.each do |meaning, emoticon| 
     if emoticon_given == master_list[meaning][emoticon[0]]
+      master_list[meaning][1]
       
   end
 
