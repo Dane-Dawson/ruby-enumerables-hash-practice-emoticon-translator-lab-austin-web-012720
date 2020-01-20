@@ -39,5 +39,4 @@ def get_english_meaning(data, string)
   
   return nil
     
-  end
 end
