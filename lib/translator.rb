@@ -23,10 +23,7 @@ end #outputs hash collection {:meaning => "english", "japanese"}
 def get_japanese_emoticon(data, string)
   master_list = load_library(data)
   
-  master_list.each do |meaning, value| #throughout the load_library hash, for each entry
-    if load_library[:meaning][0] == string #if the first value ("english") is a match
-      load_library[:meaning][1] #return "japanese"
-    end
+  master_list.each do |meaning, emoticon| 
   end
 
 end
@@ -34,9 +31,7 @@ end
 def get_english_meaning(data, string)
   master_list = load_library(data)
   
-  master_list.each do |meaning, value| #throughout the load_library hash, for each entry
-    if load_library[:meaning][1] == string #if the second value ("japanese") is a match
-      load_library[:meaning][0] #return "english"
-    end
+  master_list.each do |meaning, value| 
+    
   end
 end
