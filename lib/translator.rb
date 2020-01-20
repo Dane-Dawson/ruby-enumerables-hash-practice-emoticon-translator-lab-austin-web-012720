@@ -17,7 +17,7 @@ def load_library(file)
     get_emoticon[english_emoticon] => japanese_emoticon
   end
   
-  emoticons
+  newmoticons
 end #outputs hash collection {:meaning => "english", "japanese"}
 
 def get_japanese_emoticon(string)
