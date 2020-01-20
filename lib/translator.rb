@@ -8,6 +8,7 @@ def load_library
 end #outputs hash collection {:meaning => "english", "japanese"}
 
 def get_japanese_emoticon(string)
+  pp load_library
     #code to take input string, scan hash Load_library to locate if input matches any "english" values, if so it returns the "japanese" value of the same key
   load_library.each do |meaning, | #throughout the load_library hash, for each entry
     if load_library[:meaning][0] == string #if the first value ("english") is a match
