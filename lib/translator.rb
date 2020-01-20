@@ -33,7 +33,7 @@ end
 def get_english_meaning(data, string)
   master_list = load_library(data)
   
-  if master_list["get_meaning"].key?(japanese_emoticon) then
+  if master_list["get_meaning"].key?(string) then
     return master_list["get_meaning"][string]
   end
   
